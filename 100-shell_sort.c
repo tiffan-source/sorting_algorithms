@@ -78,6 +78,6 @@ void sort_by_gap(int *array, int size, int index_gap)
 
 void shell_sort(int *array, size_t size)
 {
-	if (array != NULL || size != 0)
+	if (array != NULL && size > 1)
 		sort_by_gap(array, size, 1);
 }
